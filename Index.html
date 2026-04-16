@@ -38,12 +38,12 @@
 
 <header>
     <h1>MeshCore Roanoke</h1>
-    <p>Off-grid communication for the Star City and surrounding 24018 area.</p>
+    <p>Off-grid communication for the Star City and surrounding area.</p>
 </header>
 
 <nav>
     <a href="#about">About</a>
-    <a href="#settings">USA Settings</a>
+    <a href="#radio settings">USA/Canada Settings</a>
     <a href="#builds">Node Builds</a>
     <a href="#contact">Join the Mesh</a>
 </nav>
@@ -53,30 +53,21 @@
     <p>MeshCore is a decentralized LoRa-based communication platform. Unlike cellular networks, MeshCore operates independently of infrastructure, making it resilient during Roanoke's winter storms or regional power outages.</p>
 </section>
 
-<section id="settings">
-    <h2>Default USA Settings</h2>
+<section id="radio settings">
+    <h2>Default USA/Canada Settings</h2>
     <div class="spec-box">
-        Region: United States (US)<br>
-        Frequency: 915 MHz ISM Band<br>
-        Primary Channel: LongFast (Default)<br>
-        Max Hops: 64 (MeshCore standard)<br>
-        Center Freq: 906.875 MHz
+        Frequency: 910.525 MHz<br>
+        Bandwidth: 62.5 kHz<br>
+	Spreading Factor: 7<br>
+	Coding Rate: 5<br>
+	Transmit Power: 22 dBm  (max effective)<br>
     </div>
-    <p>Ensure your hardware is tuned for 915 MHz. Using antennas tuned for 868 MHz (EU) will result in poor performance and potential hardware damage.</p>
+    <p>Ensure your antenna is tuned for 915 MHz. Using antennas tuned for 868 MHz (EU) will result in poor performance and potential hardware damage.</p>
 </section>
 
 <section id="builds">
     <h2>Node & Repeater Builds</h2>
-    <h3>Portable Companion</h3>
-    <p>Standard handheld unit for mobile messaging. Powered by a single 18650 cell.</p>
-    
-    <h3>Infrastructure Repeater</h3>
-    <p>Designed for high-elevation placement (e.g., Cave Spring ridges) to act as a backbone. Recommended configuration:</p>
-    <ul>
-        <li><strong>Power:</strong> 1s2p 18650 battery configuration for extended runtime.</li>
-        <li><strong>Antenna:</strong> SMA bulkhead connector to a 5.8dBi tuned fiberglass antenna.</li>
-        <li><strong>Enclosure:</strong> IP67 rated weather-sealed box with solar charging integration.</li>
-    </ul>
+    <h3>More to come!</h3>
 </section>
 
 <section id="contact">
