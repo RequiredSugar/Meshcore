@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeshCore Roanoke | 24018</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #1a1a1a;
+            --accent: #0056b3;
+            --border: #dddddd;
+            --code-bg: #f4f4f4;
+        }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        header {
+            border-bottom: 3px solid var(--text);
+            margin-bottom: 2rem;
+        }
+        h1, h2, h3 { text-transform: uppercase; letter-spacing: 1px; }
+        nav { margin-bottom: 2rem; }
+        nav a { margin-right: 1.5rem; font-weight: bold; text-decoration: none; color: var(--accent); }
+        section { margin-bottom: 3rem; border-left: 4px solid var(--border); padding-left: 1.5rem; }
+        .spec-box { background: var(--code-bg); padding: 1rem; border-radius: 4px; font-family: monospace; }
+        footer { margin-top: 5rem; font-size: 0.8rem; opacity: 0.7; border-top: 1px solid var(--border); padding-top: 1rem; }
+        @media (max-width: 600px) { body { padding: 1rem; } nav a { display: block; margin-bottom: 0.5rem; } }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>MeshCore Roanoke</h1>
+    <p>Off-grid communication for the Star City and surrounding 24018 area.</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#settings">USA Settings</a>
+    <a href="#builds">Node Builds</a>
+    <a href="#contact">Join the Mesh</a>
+</nav>
+
+<section id="about">
+    <h2>The Network</h2>
+    <p>MeshCore is a decentralized LoRa-based communication platform. Unlike cellular networks, MeshCore operates independently of infrastructure, making it resilient during Roanoke's winter storms or regional power outages.</p>
+</section>
+
+<section id="settings">
+    <h2>Default USA Settings</h2>
+    <div class="spec-box">
+        Region: United States (US)<br>
+        Frequency: 915 MHz ISM Band<br>
+        Primary Channel: LongFast (Default)<br>
+        Max Hops: 64 (MeshCore standard)<br>
+        Center Freq: 906.875 MHz
+    </div>
+    <p>Ensure your hardware is tuned for 915 MHz. Using antennas tuned for 868 MHz (EU) will result in poor performance and potential hardware damage.</p>
+</section>
+
+<section id="builds">
+    <h2>Node & Repeater Builds</h2>
+    <h3>Portable Companion</h3>
+    <p>Standard handheld unit for mobile messaging. Powered by a single 18650 cell.</p>
+    
+    <h3>Infrastructure Repeater</h3>
+    <p>Designed for high-elevation placement (e.g., Cave Spring ridges) to act as a backbone. Recommended configuration:</p>
+    <ul>
+        <li><strong>Power:</strong> 1s2p 18650 battery configuration for extended runtime.</li>
+        <li><strong>Antenna:</strong> SMA bulkhead connector to a 5.8dBi tuned fiberglass antenna.</li>
+        <li><strong>Enclosure:</strong> IP67 rated weather-sealed box with solar charging integration.</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Active nodes are frequently seen in the Southwest County area. Use the MeshCore app to scan for local peers.</p>
+</section>
+
+<footer>
+    <p>Functionalist Design &copy; 2026 Roanoke MeshCore Group. Hosted on Cloudflare Pages.</p>
+</footer>
+
+</body>
+</html>
